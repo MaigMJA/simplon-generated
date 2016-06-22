@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title> </title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <!-- ///////Ne pas supprimer la nav ou ça supprimera les id et le reste -->
+  <div id="menu">
+    <div id="nav_1"></div>
+    <div id="nav_2"></div>
+    <div id="nav_3"></div>
+  </div>
+
+  <div id="article">
+    <div id="sujet_1">
+      <!-- //////////////////GENERATEUR////////////////////////// -->
+      <form id="form_generer" action="" onsubmit="return false;">
+        <br>
+        <div class="gboutons">
+          <button id="b_generer">T'es chich ?</button>
+          <button id="b_vider">Tout effacer</button>
+        </div>
+        <br>
+        <div id="liste_phrases"></div>
+
+
+        <div id="options" style="display: none;">
+          <input type="checkbox" id="checkST" disabled="">
+          <div id="txtST" style="color: rgb(153, 153, 153);">Conserver cette structure ?</div>
+          <br>
+          <br>
+          <div id="concepteur" style="display: none;">
+            <input type="checkbox" id="checkChoixStr">
+            <label for="checkChoixStr" id="labChoixStr">Ecrire une structure</label>
+            <span id="choixStr" style="display: none;">
+              <span>&nbsp;:</span>
+              <input type="text" id="txtChoixStr" maxlength="56">
+            </span>
+          </div>
+          <hr>
+          <!-- <input type="checkbox" id="checkAudio"/>
+                  <label for="checkAudio">Prononcer les phrases générées</label>
+                  <br/> -->
+          <input type="checkbox" id="checkLg">
+          <label for="checkLg">Choisir une taille fixe</label>
+          <div id="choixLg">
+            <span id="span_lg_1">&nbsp;(</span>
+            <input type="text" id="txtLg" maxlength="3">
+            <span id="span_lg_2">&nbsp;caractères&nbsp;)</span>
+          </div>
+          <br>
+          <input type="checkbox" id="checkSujet">
+          <label for="checkSujet">Choisir le sujet (grammatical) de la phrase</label>
+          <div id="choixSujet" style="display: none;">
+            <textarea id="txtSujet" cols="36" rows="1"></textarea>
+            <br>
+            <label for="comboPersonne">Singulier ou pluriel ? </label>
+            <select id="selectPersonne">
+              <option value="3" selected="selected">singulier</option>
+              <option value="6">pluriel</option>
+            </select>
+          </div>
+        </div>
+        <!-- fin div "options" -->
+      </form>
+    </div>
+    <div id="sujet_2" style="display: none;">
+      <div id="sujet_3" style="display: none;">
+      </div>
+    </div>
+
+</body>
+
+</html>

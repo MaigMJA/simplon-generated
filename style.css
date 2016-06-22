@@ -1,0 +1,83 @@
+/*CSS pour le générateur de phrases*/
+
+
+
+@font-face {
+  font-family:'WorldBlackShadow';
+  src:url(./WorldBlackShadow.ttf);
+  font-family: 'WorldBlackShadow';
+}
+
+@font-face {
+  font-family:'ObelixPro-Broken-cyr';
+  src:url(./ObelixPro-Broken-cyr.ttf);
+}
+
+  @font-face {
+    font-family:'TYPO_COMICS_bold_italic_demo';
+    src:url(./TYPO_COMICS_bold_italic_demo.otf);
+}
+
+
+/*bouton de lancement de phrases*/
+.gboutons{
+  margin: 10px;
+  padding: 4px;
+}
+
+#b_generer{
+background-color: #FAF084;
+src:url(./WorldBlackShadow.ttf);
+font-family: 'WorldBlackShadow';
+font-size: 45px;
+color: #CCAC87;
+border-radius: 50px;
+margin: 7px;
+padding: 8px 8px 10px 8px;
+border : 3px solid #CCAC87;
+box-sizing: border-box;
+transform: rotate(8deg);
+text-shadow: 1px 1px 1px #85205C, -1px -1px 2px #ddd;
+box-shadow: 6px 12px 3px rgba(41,105,98,0.3), 14px -3px 18px #ddd, inset -12px 0px 20px rgba(41,105,98,0.3);
+}
+
+
+/*bouton effacer*/
+#b_vider{
+  font-family:'ObelixPro-Broken-cyr';
+  font-size: 33px;
+  color: #CCAC87;
+  border-radius: 50px;
+  margin: 5% 7px 7px 7px;
+  padding:  8px 8px 10px 8px;
+  border : 3px solid #CCAC87;
+  box-sizing: border-box;
+  transform: rotate(-6deg);
+  text-shadow: 1px 1px 1px #85205C, -1px -1px 2px #ddd;
+  box-shadow: 3px 12px 3px rgba(41,105,98,0.2), 14px -3px 18px #ddd, inset -12px 0px 20px rgba(41,105,98,0.3);
+}
+
+
+
+/*phrases générées*/
+#liste_phrases{
+  font-family: 'TYPO_COMICS_bold_italic_demo';
+  font-size: 19px;
+  color :grey;
+  text-align: center;
+  margin: auto;
+  background-color: rgba(255,255,255,0.2);
+  padding: 5px;
+  top:80px;
+  border-radius: 50px;
+}
+
+
+
+.b_suppr{
+  width: 35px;
+  background-color: white;
+  border-radius: 50px;
+  padding:6px;
+  position: absolute;
+}
